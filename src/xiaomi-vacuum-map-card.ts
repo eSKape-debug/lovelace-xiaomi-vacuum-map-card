@@ -453,8 +453,8 @@ export class XiaomiVacuumMapCard extends LitElement {
             const allPresets = this._getAllPresets();
             const allAvailablePresets = this._getAllAvailablePresets();
             let index = 0;
-            if (config.current_preset){
-                const presetMapId = this.hass.states[config.current_preset];
+            if (this.config.current_preset){
+                const presetMapId = this.hass.states[this.config.current_preset];
                 console.log(presetMapId);
                 index = allPresets.indexOf(allAvailablePresets[presetMapId]);
             }
