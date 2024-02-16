@@ -48,6 +48,7 @@ export type EntityRegistryEntry = {
 export interface XiaomiVacuumMapCardConfig extends LovelaceCardConfig, CardPresetConfig {
     readonly title?: string;
     readonly additional_presets?: CardPresetConfig[];
+    readonly current_preset?: string;
     readonly language?: Language;
     readonly debug?: boolean;
     readonly action_handler_id?: string;
